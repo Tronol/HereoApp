@@ -31,11 +31,6 @@ class MainActivity : AppCompatActivity() {
         }
         Log.i("IS_LOGGED", isLogged.toString())
 
-        //Aqui declararemos todos los elementos de la interfaz con los que
-        // vayamos a tener alguna interacion
-
-        //Llamamos a la funcion findViewById para que en la biblioteca de recursos
-        //busque un id en especifico
         emailEditText = findViewById(R.id.emailET)
         passwordEditText = findViewById((R.id.passwordET))
         loginBtn = findViewById(R.id.btnLogin)

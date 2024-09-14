@@ -47,8 +47,7 @@ class HeroesActivity : AppCompatActivity() {
 
         // Filtro recicle
         itemRecyclerView = findViewById(R.id.heroes_list)
-        itemRecyclerView.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        itemRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         charactersList?.let {
             itemRecyclerView.adapter = CharacterItemAdapter(it)
