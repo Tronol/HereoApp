@@ -21,6 +21,7 @@ import com.example.heroappex.models.Publisher
 import java.util.concurrent.Flow
 
 class PublisherActivity : AppCompatActivity() {
+    //Variables utilizables
     lateinit var logoutBtn : ImageView
     lateinit var dcBtn : ImageButton
     lateinit var marvelBtn : View
@@ -34,7 +35,7 @@ class PublisherActivity : AppCompatActivity() {
 
         dcBtn = findViewById(R.id.dc)
         marvelBtn = findViewById(R.id.marvel)
-
+        //Logout
         logoutBtn.setOnClickListener{
             Log.i("LOGOUT","CERRANDO SESION")
             val editor = sharedPreferences.edit()
@@ -44,7 +45,7 @@ class PublisherActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
+        //Opcion de heroes dc
         dcBtn.setOnClickListener {
             val dcCharacters = CharacterItem.characters.filter { it.id in 11..20 }
             val intent = Intent(this@PublisherActivity, HeroesActivity::class.java)
@@ -52,7 +53,7 @@ class PublisherActivity : AppCompatActivity() {
             intent.putExtra("COLOR", "#2c4461")
             startActivity(intent)
         }
-
+        //Opcion marvel
         marvelBtn.setOnClickListener {
             val marvelCharacters = CharacterItem.characters.filter { it.id in 1..10 }
             val intent = Intent(this@PublisherActivity, HeroesActivity::class.java)
