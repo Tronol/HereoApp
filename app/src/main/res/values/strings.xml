@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HeroAppEX</string>
+    <string name="backwards_arrow"><![CDATA[<-----]]></string>
+    <string name="email">usuario@gmail.com</string>
+    <string name="password">********</string>
+    <string name="login">inicio sesion</string>
+</resources>
